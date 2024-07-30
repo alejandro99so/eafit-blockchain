@@ -4,6 +4,7 @@ const port = 3000;
 const fs = require("fs/promises");
 const contract = require("./constants.json");
 require("dotenv").config();
+app.use(cors());
 
 const { Web3 } = require("web3");
 const web3 = new Web3("https://avalanche-fuji-c-chain-rpc.publicnode.com");
